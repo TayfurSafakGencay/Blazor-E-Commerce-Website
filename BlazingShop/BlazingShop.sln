@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Server", "BlazingShop\Server\BlazingShop.Server.csproj", "{F23C0EA7-28DA-4FA1-AD35-CBD70CD036CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Client", "BlazingShop\Client\BlazingShop.Client.csproj", "{5F74F086-3D24-45A3-AFB2-E8CD6F9FDCC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Shared", "BlazingShop\Shared\BlazingShop.Shared.csproj", "{B7E6A747-AC16-49C9-9352-E496FAD4656A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F23C0EA7-28DA-4FA1-AD35-CBD70CD036CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23C0EA7-28DA-4FA1-AD35-CBD70CD036CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23C0EA7-28DA-4FA1-AD35-CBD70CD036CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23C0EA7-28DA-4FA1-AD35-CBD70CD036CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F74F086-3D24-45A3-AFB2-E8CD6F9FDCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F74F086-3D24-45A3-AFB2-E8CD6F9FDCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F74F086-3D24-45A3-AFB2-E8CD6F9FDCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F74F086-3D24-45A3-AFB2-E8CD6F9FDCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E6A747-AC16-49C9-9352-E496FAD4656A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E6A747-AC16-49C9-9352-E496FAD4656A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E6A747-AC16-49C9-9352-E496FAD4656A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E6A747-AC16-49C9-9352-E496FAD4656A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
