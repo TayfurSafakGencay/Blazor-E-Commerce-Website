@@ -1,0 +1,12 @@
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\bin\Debug\net5.0\BlazingShop.Shared.deps.json
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\bin\Debug\net5.0\BlazingShop.Shared.dll
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\bin\Debug\net5.0\ref\BlazingShop.Shared.dll
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\bin\Debug\net5.0\BlazingShop.Shared.pdb
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.csproj.AssemblyReference.cache
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.AssemblyInfoInputs.cache
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.AssemblyInfo.cs
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.dll
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\ref\BlazingShop.Shared.dll
+C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Shared\obj\Debug\net5.0\BlazingShop.Shared.pdb

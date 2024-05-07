@@ -1,7 +1,27 @@
 ﻿@page "/"
+@page "/{categoryurl}"
+@inject ICategoryService CategoryService
 
-<h1>Hello, world!</h1>
+@if (_category != null)
+{
+    <h1>Welcome to @_category.Name section!</h1>
+    <ProductList CategoryId="@_category.Id"/>
+}
+else
+{
+    <h1>Welcome to Blazing Shop!</h1>
+    <ProductList/>
+}
 
-Welcome to your new app.
+@code
+{
+    [Parameter]
+    public string CategoryUrl { get; set; }
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+    private Category _category;
+
+    protected override void OnParametersSet()
+    {
+        _category = CategoryUrl != null ? CategoryService.Categories.FirstOrDefault(c => c.Url.ToLower().Equals(CategoryUrl.ToLower())) : null;
+    }
+}
