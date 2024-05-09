@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using BlazingShop.Shared;
 
 namespace BlazingShop.Client.Services.ProductService
@@ -6,7 +8,11 @@ namespace BlazingShop.Client.Services.ProductService
   public interface IProductService
   {
     List<Product> Products { get; set; }
+    
+    event Action OnChange;
 
-    void LoadProducts();
+    Task LoadProducts(string categoryUrl = null);
+
+    Task<Product> GetProduct(int id);
   }
 }

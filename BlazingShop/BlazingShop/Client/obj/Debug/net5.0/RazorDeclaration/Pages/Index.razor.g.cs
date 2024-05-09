@@ -113,21 +113,24 @@ using BlazingShop.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Pages\Index.razor"
+#line 18 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Pages\Index.razor"
  
     [Parameter]
     public string CategoryUrl { get; set; }
 
     private Category _category;
 
-    protected override void OnParametersSet()
+    protected override async Task OnParametersSetAsync()
     {
+        await ProductService.LoadProducts(CategoryUrl);
+        
         _category = CategoryUrl != null ? CategoryService.Categories.FirstOrDefault(c => c.Url.ToLower().Equals(CategoryUrl.ToLower())) : null;
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProductService ProductService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICategoryService CategoryService { get; set; }
     }
 }

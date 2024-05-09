@@ -111,7 +111,7 @@ using BlazingShop.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 41 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Shared\NavMenu.razor"
+#line 30 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
@@ -122,9 +122,9 @@ using BlazingShop.Shared;
         collapseNavMenu = !collapseNavMenu;
     }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        CategoryService.LoadCategories();
+        await CategoryService.LoadCategories();
     }
 
 

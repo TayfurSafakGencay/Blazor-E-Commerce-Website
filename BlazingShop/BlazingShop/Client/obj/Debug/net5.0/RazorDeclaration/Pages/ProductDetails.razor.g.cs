@@ -103,7 +103,7 @@ using BlazingShop.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Product/{id}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Product/{id:int}")]
     public partial class ProductDetails : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -114,21 +114,21 @@ using BlazingShop.Shared;
 #nullable restore
 #line 20 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Pages\ProductDetails.razor"
        
-    private Product _product;
+    private Product _product = new();
     
     [Parameter]
-    public string Id { get; set; }
+    public int Id { get; set; }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        if (ProductService.Products == null || ProductService.Products.Count == 0)
-        {
-            ProductService.LoadProducts();
-            return;
-        }
+        // if (ProductService.Products == null || ProductService.Products.Count == 0)
+        // {
+        //     ProductService.LoadProducts();
+        //     return;
+        // }
 
-        _product = ProductService.Products.FirstOrDefault(p => p.Id == int.Parse(Id));
-        base.OnInitialized();
+        _product = await ProductService.GetProduct(Id);
+        // ProductService.Products.FirstOrDefault(p => p.Id == int.Parse(Id));
     }
 
 #line default

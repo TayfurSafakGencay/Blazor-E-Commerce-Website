@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using BlazingShop.Shared;
 
 namespace BlazingShop.Client.Services.CategoryService
@@ -7,6 +8,6 @@ namespace BlazingShop.Client.Services.CategoryService
   {
     List<Category> Categories { get; set; }
 
-    void LoadCategories();
+    Task LoadCategories();
   }
 }

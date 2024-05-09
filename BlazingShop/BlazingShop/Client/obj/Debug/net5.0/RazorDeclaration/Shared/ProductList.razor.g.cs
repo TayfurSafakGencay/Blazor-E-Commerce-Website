@@ -114,12 +114,18 @@ using BlazingShop.Shared;
 #line 27 "C:\Users\Safak\RiderProjects\E-Commerce\BlazingShop\BlazingShop\Client\Shared\ProductList.razor"
        
 
-    [Parameter]
-    public int? CategoryId { get; set; }
-    
+    // [Parameter]
+    // public int? CategoryId { get; set; }
+    //
     protected override void OnInitialized()
     {
-        ProductService.LoadProducts();
+        // ProductService.LoadProducts();
+        ProductService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        ProductService.OnChange -= StateHasChanged;
     }
 
 #line default
